@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HPMuetSzab Competition</title>
+    <link rel="icon" type="image/png" href="media/logo2.png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .important-dates {
+            border: 2px solid black;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+            background: linear-gradient(135deg, #ff00c85d, #f55aa7);
+            opacity: 0; /* Initially hidden for animation */
+            transform: translateY(20px); /* Start slightly below */
+        }
+
+        .heading {
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            opacity: 0; /* Initially hidden for animation */
+            transform: translateY(20px); /* Start slightly below */
+        }
+
+        .date {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .event-description {
+            font-size: 20px;
+            font-weight: bold;
+            color: #FFD700;
+        }
+
+        .startup-card {
+            border: 2px solid #DDA0DD;
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+            background-color: white;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            opacity: 0; /* Initially hidden for animation */
+            transform: translateY(20px); /* Start slightly below */
+            color: #333;
+            
+        }
+        
+       .startup-card:hover {
+            background-color: #f55aa7;
+        }
+
+        .startup-card:hover .startup-name {
+           color: white;
+        }
+
+        .startup-name {
+            font-size: 25px;
+            font-weight: bold;
+            color: #C7005C;
+        }
+       
+        .startup-tagline {
+            font-size: 16px;
+           
+            /* color: #555; */
+        }
+
+        .startup-description {
+            font-size: 14px;
+            /* color: #777; */
+        }
+
+        .social-icons a {
+            color: white;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #FFD700;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="media/home/logo2.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto w-100 d-lg-flex justify-content-end">
+                    <li class="nav-item ">
+                        <a class="nav-link " href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="teams.html">Our Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link activ" href="competetion.html">Competition</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link custom-button  text-white" href="https://forms.gle/5yQQefdpbc7yn1377" target="_blank" id="register">Register Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Dates Section -->
+    <div class="container " style="margin-top: 120px; margin-bottom: 120px; ">
+
+        <div class="text-center mb-4">
+            <h1 class="fw-bold heading fas"><i class="fas fa-calendar-alt" style="color: #FFD700;"></i> Important Dates
+            </h1>
+        </div>
+
+        <div class="important-dates mb-4 ">
+            <h1 class="date"><i class="fas fa-calendar-day" style="color: #FFD700;"></i> 19 & 20 February</h1>
+            <h3 class="event-description"><i class="fas fa-map-marker-alt" style="color: #FFD700;"></i> Main Event at MUET SZAB Campus</h3>
+            <hr>
+            <h1 class="date"><i class="fas fa-calendar-day" style="color: #FFD700;"></i> 17 February</h1>
+            <h3 class="event-description"><i class="fas fa-map-marker-alt" style="color: #FFD700;"></i> Pre-Event at MUET Main Campus</h3>
+        </div>
+
+        <!-- Registered Startups Section -->
+        <div class="text-center  " style="margin-top: 90px; margin-bottom: 50px;">
+            <h1 class="fw-bold " style="color: white;"><i class="fas fa-rocket" style="color: #FFD700;"></i> Registered Startups 2025</h1>
+        </div>
+
+        <div class="row g-3 justify-content-center ">
+            <div class=" col-md-4">
+                <div class="startup-card card col-sm-12">
+                    <div class="startup-name">Glownaturals</div>
+                    </div>
+            </div>
+            <div class=" col-md-4">
+                <div class="startup-card card">
+                    <div class="startup-name">ThreeThreads</div>
+                   </div>
+            </div>
+            <div class=" col-md-4 ">
+                <div class="startup-card card">
+                    <div class="startup-name ">Sportec</div>
+                  </div>
+            </div>
+            <div class=" col-md-4">
+                <div class="startup-card card">
+                    <div class="startup-name">RentX</div>
+                  </div>
+            </div>
+            <div class=" col-md-4">
+                <div class="startup-card card">
+                    <div class="startup-name">Service Hub</div>
+               </div>
+            </div>
+            <div class=" col-md-4">
+                <div class="startup-card card">
+                    <div class="startup-name">Aura Plus</div>
+                   
+                </div>
+            </div>
+            <div class=" col-md-4">
+                <div class="startup-card card">
+                    <div class="startup-name">Shimmer Spark Jewelry</div>
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5>Hult Prize at MUET SZAB</h5>
+                    <p>Empowering young innovators to create social impact through entrepreneurship.</p>
+                </div>
+                <div class="col-lg-2 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="teams.html">Our Team</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="competetion.html">Competition</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h5>Contact Us</h5>
+                    <p>
+                        Hult Prize at MUET SZAB <br>
+                        Phone: +92 3051028803<br>
+                        Email: <a href="mailto:hultprizemuetkhp@gmail.com">hultprizemuetkhp@gmail.com</a>
+                    </p>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h5>Follow Us</h5>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=61556066590304" class="me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/company/hult-prize-muet-szab/" class="me-2"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/hpmuetkhp/" class="me-2"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <p class="mb-0">&copy; 2025 Hult Prize MUET SZAB. All rights reserved.</p>
+
+                <!-- Developers -->
+                <p class="mb-0">
+                    Designed and developed by <br> 
+                    <a href="https://www.linkedin.com/in/raza-abbas-23sw/"><i class="fab fa-linkedin"></i> Raza Abbas</a> & 
+                    <a href="https://www.linkedin.com/in/aitzazhassan"><i class="fab fa-linkedin"></i> Aitzaz Hassan</a> 
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // GSAP Animation for Page Load
+        document.addEventListener("DOMContentLoaded", function () {
+            // Animate the heading
+            gsap.to(".heading", { 
+                opacity: 1,
+                y: 0,
+                duration: 1,
+                delay: 0.5,
+                ease: "power2.out"
+            });
+
+            // Animate the important dates section
+            gsap.to(".important-dates", {
+                opacity: 1,
+                y: 0,
+                duration: 1,
+                delay: 1,
+                ease: "power2.out"
+            });
+
+            // Animate each startup card
+            gsap.to(".startup-card", {
+                opacity: 1,
+                y: 0,
+                duration: 1,
+                stagger: 0.2, // Adds a delay between each card
+                delay: 1.5,
+                ease: "power2.out"
+            });
+        });
+    </script>
+</body>
+
+</html>

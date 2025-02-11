@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HPMuetSzab Events</title>
+    <link rel="icon" type="image/png" href="media/logo2.png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top ">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="media/home/logo2.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto w-100 d-lg-flex justify-content-end">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="teams.html">Our Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link activ" href="">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="competetion.html">Competition</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link custom-button  text-white" href="https://forms.gle/5yQQefdpbc7yn1377" target="_blank" id="register">Register Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Events Section -->
+    <div class="container" id="events" style="margin-top: 130px;">
+
+    </div>
+
+
+     <!-- Footer Section -->
+  <footer id="footer" class="mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4">
+          <h5>Hult Prize at MUET SZAB</h5>
+          <p>Empowering young innovators to create social impact through entrepreneurship.</p>
+        </div>
+        <div class="col-lg-2 mb-4">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="teams.html">Our Team</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="competetion.html">Competition</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 mb-4">
+          <h5>Contact Us</h5>
+          <p>
+           Hult Prize at MUET SZAB <br>
+            Phone: +92 3051028803<br>
+            Email: <a href="mailto:hultprizemuetkhp@gmail.com">hultprizemuetkhp@gmail.com</a>
+          </p>
+        </div>
+        <div class="col-lg-3 mb-4">
+          <h5>Follow Us</h5>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=61556066590304" class="me-2"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com/company/hult-prize-muet-szab/" class="me-2"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/hpmuetkhp/" class="me-2"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <p class="mb-0">&copy; 2025 Hult Prize MUET SZAB. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <!-- FontAwesome for Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const events = [
+    {
+        title: "Startup Ka Funding Formula",
+        speaker: "Urooj Fatima",
+        image: "media/events/Event6.jpg",
+        date: "27th January 2025",
+        time: "8:00 PM",
+        mode: "Online",
+        attendees: "45 Attendees",
+        description: "The insightful session with Urooj Fatima, Founder of Coolcoinlee, was successfully held on 27th January 2025 at 8:00 PM via Teams. The discussion provided valuable guidance on the funding strategies for startups, covering key aspects of investment, fundraising, and financial planning to help aspiring entrepreneurs succeed.",
+    },
+    {
+        title: "Raah-e-Impact: Tasalsul-e-Hult",
+        speaker: "Rehan Mehdi",
+        image: "media/events/Event5.jpg",
+        date: "18th January 2025",
+        time: "8:00 PM",
+        mode: "Online",
+        attendees: "45 Attendees",
+        description: "The impactful session with Rehan Mehdi, Lead of Hult Prize On-Campus MUET SZAB, was successfully held on 18th January 2025 at 8:00 PM via Teams. The discussion emphasized creating lasting impact through innovative initiatives, inspiring participants to drive meaningful change and explore new opportunities in the startup ecosystem.",
+    },
+    {
+        title: "Takhleeq-e-Startup",
+        speaker: "Waqas Saeed & Momina Iqbal",
+        image: "media/events/Event4.jpg",
+        date: "16th January 2025",
+        time: "8:00 PM",
+        mode: "Online",
+        attendees: "75 Attendees",
+        description: "The informative session with Waqas Saeed and Momina Iqbal, Mentors at ETL, was successfully held on 16th January 2025 at 8:00 PM via Zoom. The discussion focused on the creation and growth of startups, providing aspiring entrepreneurs with essential insights into innovation, business development, and strategic planning.",
+    },
+    {
+        title: "Artificial Intelligence and Entrepreneurship",
+        speaker: "Asad Raza",
+        image: "media/events/Event3.jpg",
+        date: "7th January 2025",
+        time: "1:00 PM",
+        mode: "In-Person",
+        attendees: "55 Attendees",
+        description: "The engaging session with Asad Raza, CEO of Indus CyberForce, was successfully held on 7th January 2025 at 1:00 PM in the Software Department. The discussion provided valuable insights into the intersection of AI and entrepreneurship, exploring how artificial intelligence is transforming business landscapes and driving innovation.",
+    },
+    {
+        title: "Innovating for Impact: Exploring the Hult Prize and the SDGs",
+        speaker: "Mazhar Ali Memon",
+        image: "media/events/Event2.jpg",
+        date: "31st December 2024",
+        time: "12:00 PM",
+        mode: "Online",
+        attendees: "22 Attendees",
+        description: "The insightful session with Mazhar Ali Memon, Engineer, was successfully held on 31st December 2024 at 12:00 PM via Teams. The discussion focused on innovation for social impact, exploring the Hult Prize and Sustainable Development Goals (SDGs) while inspiring participants to develop creative solutions for global challenges.",
+    },
+    {
+        title: "Driving Impact with Teamwork",
+        speaker: "Fazli Subhan",
+        image: "media/events/Event1.jpg",
+        date: "3rd December 2024",
+        time: "7:00 PM",
+        mode: "Online",
+        attendees: "14 Attendees",
+        description: "The insightful session with Fazli Subhan, National Coordinator at Hult Prize Pakistan, was successfully held on 3rd December at 7:00 PM via Zoom. Attendees gained valuable knowledge on teamwork, leadership, and effective strategies to enhance on-campus initiatives, making it a highly engaging and impactful discussion.",
+    },
+];
+    const eventsContainer = document.getElementById("events");
+
+    events.forEach((event, index) => {
+        const isOdd = index % 2 !== 0;
+
+        let eventHTML = "";
+        if (!isOdd) {
+            eventHTML = `
+                <div class="container odd col-md-12" style="margin-top: 30px;">
+                    <div class="card mb-12">
+                        <div class="row g-0 align-items-center">
+                            <div class="col-md-4">
+                                <img src="${event.image}" class="img-fluid rounded" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h1 class="card-title mt-3">${event.title}</h1>
+                                    <p class="card-text" style="font-size: large;">
+                                        ${event.description}
+                                    </p>
+                                    <div class="d-flex flex-wrap gap-3 mt-3">
+                                        <button class="btn text-white d-flex align-items-center px-3 py-2" style="background-color: #e6007f;" type="button" disabled>
+                                            <i class="fas fa-globe me-2"></i> ${event.mode}
+                                        </button>
+                                        <button class="btn text-white d-flex align-items-center px-3 py-2" style="background-color: #e6007f;" type="button" disabled>
+                                            <i class="fas fa-user-tie me-2"></i> ${event.speaker}
+                                        </button>
+                                        <button class="btn text-white d-flex align-items-center px-3 py-2" style="background-color: #e6007f;" type="button" disabled>
+                                            <i class="fas fa-users me-2"></i> ${event.attendees}
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+        } else {
+            eventHTML = `
+                <div class="container even" style="margin-top: 30px;">
+                    <div class="card mb-12">
+                        <div class="row flex-column-reverse flex-md-row g-0 align-items-center">
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h1 class="card-title mt-3">${event.title}</h1>
+                                    <p class="card-text" style="font-size: large;">
+                                        ${event.description}
+                                    </p>
+                                    <div class="d-flex flex-wrap gap-3 mt-3">
+                                        <button class="btn text-white d-flex align-items-center px-3 py-2" style="background-color: #e6007f;" type="button" disabled>
+                                            <i class="fas fa-globe me-2"></i> ${event.mode}
+                                        </button>
+                                        <button class="btn text-white d-flex align-items-center px-3 py-2" style="background-color: #e6007f;" type="button" disabled>
+                                            <i class="fas fa-user-tie me-2"></i> ${event.speaker}
+                                        </button>
+                                        <button class="btn text-white d-flex align-items-center px-3 py-2" style="background-color: #e6007f;" type="button" disabled>
+                                            <i class="fas fa-users me-2"></i> ${event.attendees}
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <img src="${event.image}" class="img-fluid rounded" style="width: 100%; height: auto; object-fit: cover;" alt="Event Image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        eventsContainer.innerHTML += eventHTML;
+    });
+});
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+            console.log(window.innerWidth);
+            if (window.innerWidth > 768) {
+                gsap.to(".odd", { x: -30, duration: 0.6, ease: "power2.in" });
+                gsap.to(".even", { x: 30, duration: 0.6, ease: "power2.in" });
+                console.log("Animation applied");
+            }
+            else {
+                gsap.from(".odd", { y: -30, duration: 0.6, ease: "power2.in" });
+                gsap.from(".even", { y: -30, duration: 0.6, ease: "power2.in" });
+            }
+        });
+    </script>
+
+</body>
+
+</html>
