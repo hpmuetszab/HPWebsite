@@ -64,7 +64,7 @@
     <!-- Msin Event Images -->
     <div class="session-container">
       <h1 class="session-heading">Main Event Images</h1>
-      <div class="row g-2 session24-25-images">
+      <div class="row g-2 Main_event_images">
         <!-- Gallery Images for 2024-25 Session will be populated here -->
       </div>
     </div>
@@ -147,6 +147,39 @@
       } 
     });
 
+  // Image links for Main Event
+      const imageLinks_Event = [
+        " https://i.postimg.cc/J4QB82hs/IMG-20250222-WA0005.jpg",
+        " https://i.postimg.cc/251q4j7W/IMG-20250222-WA0006.jpg",
+        " https://i.postimg.cc/JhSsKwp2/IMG-20250222-WA0007.jpg",
+        " https://i.postimg.cc/Jz6DDHZm/IMG-20250222-WA0008.jpg",
+        " https://i.postimg.cc/zBWVcdMX/IMG-20250222-WA0009.jpg",
+        " https://i.postimg.cc/7hkf8381/IMG-20250222-WA0010.jpg",
+        " https://i.postimg.cc/XqkXVr4R/IMG-20250222-WA0011.jpg",
+        " https://i.postimg.cc/y6mDhbcL/IMG-20250222-WA0012.jpg",
+        " https://i.postimg.cc/sD3vT4Js/IMG-20250222-WA0013.jpg",
+        " https://i.postimg.cc/rwKyHnRX/IMG-20250222-WA0014.jpg",
+        " https://i.postimg.cc/qvSBHs2t/IMG-20250222-WA0015.jpg",
+        " https://i.postimg.cc/L6y6NKX3/IMG-20250222-WA0016.jpg",
+        " https://i.postimg.cc/wvd679fg/IMG-20250222-WA0017.jpg",
+        " https://i.postimg.cc/NM7QXZST/IMG-20250222-WA0018.jpg",
+        " https://i.postimg.cc/zvx5tKJG/IMG-20250222-WA0019.jpg",
+        " https://i.postimg.cc/T20R3Mrv/IMG-20250222-WA0020.jpg",
+        " https://i.postimg.cc/KjGxDJhW/IMG-20250222-WA0021.jpg",
+        " https://i.postimg.cc/76DkqmhL/IMG-20250222-WA0022.jpg",
+        " https://i.postimg.cc/ydPzxc3y/IMG-20250222-WA0023.jpg",
+        " https://i.postimg.cc/sxgChxpd/IMG-20250222-WA0024.jpg",
+        " https://i.postimg.cc/RZkmDMzK/IMG-20250222-WA0027.jpg",
+        " https://i.postimg.cc/DyD3S20H/IMG-20250222-WA0030.jpg",
+        " https://i.postimg.cc/HL1GtBQt/Whats-App-Image-2025-02-22-at-12-50-24-73bb9d6d.jpg",
+        " https://i.postimg.cc/0jXRdvf6/Whats-App-Image-2025-02-22-at-12-50-25-2f3fc11a.jpg",
+        " https://i.postimg.cc/59sVM5Vx/Whats-App-Image-2025-02-22-at-12-50-25-9fd9d2dd.jpg",
+        " https://i.postimg.cc/QtSRhDv6/Whats-App-Image-2025-02-22-at-12-50-25-c16d9078.jpg",
+        " https://i.postimg.cc/4dXrDy27/Whats-App-Image-2025-02-22-at-12-50-26-4893b4a5.jpg",
+        " https://i.postimg.cc/BnK9Dd16/Whats-App-Image-2025-02-22-at-12-50-26-69d94f58.jpg",
+        " https://i.postimg.cc/fTkhW3zY/Whats-App-Image-2025-02-22-at-12-50-26-7e832dda.jpg",
+        " https://i.postimg.cc/Dzr9pL63/Whats-App-Image-2025-02-22-at-12-50-43-67f69eff.jpg",
+     ];
     // Image links for 2023-24 session
     const imageLinks23_24 = [
   "https://i.postimg.cc/P5gc5ZQ2/1.jpg",
@@ -252,12 +285,11 @@
     }
 
     // Initialize galleries for both sessions
+    createGalleryImages(document.querySelector(".Main_event_images"), imageLinks_Event, "24-25");
     createGalleryImages(document.querySelector(".session24-25-images"), imageLinks24_25, "24-25");
     createGalleryImages(document.querySelector(".session23-24-images"), imageLinks23_24, "23-24");
   </script>
-  </script>
 
-</body>
 </body>
 
 </html>
