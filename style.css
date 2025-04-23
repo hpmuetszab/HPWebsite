@@ -226,6 +226,11 @@ nav ul li .activ {
   justify-content: center;
   gap: 5px;
 }
+.read-more-btn{
+  border: none;
+  outline: none;
+  color: #e6007f;
+}
 
 @media (max-width: 991.98px) {
   .navbar-nav {
